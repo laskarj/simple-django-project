@@ -1,7 +1,8 @@
+from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
-from django.http import HttpResponse, HttpRequest
 
 from app.models import Car
+
 
 def cars_list(request: HttpRequest) -> HttpResponse:
     car_list = Car.objects.all()
