@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+from app.models import Car
+
+def cars_list(request):
+    return HttpResponse("Car List!")
